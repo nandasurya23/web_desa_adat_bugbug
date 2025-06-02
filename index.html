@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desa Adat Bugbug - Pariwisata Budaya Bali Mula</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Desa Adat Bugbug</h1>
+            <p>Selamat datang di pusat informasi pariwisata budaya Desa Adat Bugbug, salah satu desa tertua di Bali yang dikenal sebagai "Bali Mula" - asal mula masyarakat Bali.</p>
+            <a href="#events" class="btn">Lihat Acara Budaya</a>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#calendar">Kalender Budaya</a></li>
+                <li><a href="#events">Acara Budaya</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2>Tentang Desa Adat Bugbug</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Desa Adat Bugbug merupakan salah satu desa tertua di Bali yang disebut "Bali Mula" yang artinya asal mula dari masyarakat Bali. Desa ini terletak di Kecamatan Karangasem, Kabupaten Karangasem, Provinsi Bali dengan luas wilayah 8,87 km².</p>
+                <p>Secara geografis, Desa Adat Bugbug terletak di wilayah pesisir pantai serta perbukitan sehingga memiliki banyak destinasi wisata alam yang menarik. Kehidupan sehari-hari di Desa Bugbug masih sangat dipengaruhi oleh nilai-nilai budaya tradisional Bali.</p>
+                <p>Masyarakatnya menjaga adat dan tradisi, termasuk dalam kegiatan upacara keagamaan maupun upacara adat. Hari raya terbesar adalah hari raya Usaba di Pura Gumang yang diadakan setiap 2 tahun sekali.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Desa Adat Bugbug">
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendar Section -->
+    <section id="calendar" class="container">
+        <h2>Kalender Budaya</h2>
+        <div class="calendar">
+            <div class="calendar-header">
+                <h3 id="current-month-year">November 2023</h3>
+                <div>
+                    <button id="prev-month" class="btn">Bulan Sebelumnya</button>
+                    <button id="next-month" class="btn">Bulan Berikutnya</button>
+                </div>
+            </div>
+            <div class="calendar-grid" id="calendar-days-header">
+                <!-- Days header will be populated by JavaScript -->
+            </div>
+            <div class="calendar-grid" id="calendar-dates">
+                <!-- Dates will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="container">
+        <h2>Acara Budaya Mendatang</h2>
+        <div class="events-container">
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="https://images.unsplash.com/photo-1527525443983-6e60c75fff46?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Usaba Gumang">
+                </div>
+                <div class="event-details">
+                    <div class="event-date">15 November 2023</div>
+                    <h3 class="event-title">Usaba Gumang</h3>
+                    <p>Upacara adat terbesar di Desa Bugbug yang diadakan setiap 2 tahun sekali di Pura Gumang.</p>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Ngaben">
+                </div>
+                <div class="event-details">
+                    <div class="event-date">25 November 2023</div>
+                    <h3 class="event-title">Upacara Ngaben Massal</h3>
+                    <p>Upacara pembakaran jenazah secara massal yang dilakukan oleh masyarakat Desa Bugbug.</p>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Odalan">
+                </div>
+                <div class="event-details">
+                    <div class="event-date">5 Desember 2023</div>
+                    <h3 class="event-title">Odalan Pura Desa</h3>
+                    <p>Hari raya ulang tahun Pura Desa yang dirayakan setiap 210 hari sekali menurut kalender Bali.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="container">
+        <h2>Galeri Budaya</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Upacara Adat">
+                <div class="gallery-caption">Upacara Adat di Pura Desa</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Tarian Tradisional">
+                <div class="gallery-caption">Tarian Tradisional Rejang Dewa</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Pemandangan Desa">
+                <div class="gallery-caption">Pemandangan Alam Desa Bugbug</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1527525443983-6e60c75fff46?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Prosesi Upacara">
+                <div class="gallery-caption">Prosesi Upacara Usaba Gumang</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2>Hubungi Kami</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Informasi Kontak</h3>
+                <p><strong>Alamat:</strong> Desa Adat Bugbug, Kec. Karangasem, Kab. Karangasem, Bali</p>
+                <p><strong>Email:</strong> info@desabugbug.com</p>
+                <p><strong>Telepon:</strong> +62 361 2345678</p>
+                <p><strong>Jam Operasional:</strong> Senin - Jumat, 08:00 - 17:00 WITA</p>
+            </div>
+            <div class="contact-form">
+                <h3>Kirim Pesan</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Desa Adat Bugbug</h3>
+                    <p>Pusat informasi pariwisata budaya Desa Adat Bugbug, "Bali Mula" - asal mula masyarakat Bali.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Tautan Cepat</h3>
+                    <p><a href="#about">Tentang Kami</a></p>
+                    <p><a href="#calendar">Kalender Budaya</a></p>
+                    <p><a href="#events">Acara Budaya</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Media Sosial</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f">f</i></a>
+                        <a href="#"><i class="fab fa-instagram">i</i></a>
+                        <a href="#"><i class="fab fa-youtube">y</i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Desa Adat Bugbug. Semua Hak Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
