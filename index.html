@@ -7,8 +7,76 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Masuk</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn form-submit">Masuk</button>
+                <div class="form-footer">
+                    Belum punya akun? <a href="#" id="showRegister">Daftar disini</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Daftar</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="registerName">Nama Lengkap</label>
+                    <input type="text" id="registerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Password</label>
+                    <input type="password" id="registerPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerConfirmPassword">Konfirmasi Password</label>
+                    <input type="password" id="registerConfirmPassword" required>
+                </div>
+                <button type="submit" class="btn form-submit">Daftar</button>
+                <div class="form-footer">
+                    Sudah punya akun? <a href="#" id="showLogin">Masuk disini</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <!-- Header -->
     <header>
+        <div class="auth-buttons" id="authButtons">
+            <button class="btn btn-secondary" id="loginBtn">Masuk</button>
+            <button class="btn" id="registerBtn">Daftar</button>
+        </div>
+
+        <div class="user-info" id="userInfo" style="display: none;">
+            <img src="https://ui-avatars.com/api/?name=User+Name&background=random" alt="User">
+            <div class="dropdown">
+                <span id="userName">User Name</span>
+                <div class="dropdown-content">
+                    <a href="#">Profil</a>
+                    <a href="#" id="logoutBtn">Keluar</a>
+                </div>
+            </div>
+        </div>
+
         <div class="container">
             <h1>Desa Adat Bugbug</h1>
             <p>Selamat datang di pusat informasi pariwisata budaya Desa Adat Bugbug, salah satu desa tertua di Bali yang dikenal sebagai "Bali Mula" - asal mula masyarakat Bali.</p>
@@ -41,6 +109,14 @@
             <div class="about-image">
                 <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Desa Adat Bugbug">
             </div>
+        </div>
+
+        <!-- Admin Section (only visible when logged in) -->
+        <div class="admin-section" id="adminSection">
+            <h3>Admin Dashboard</h3>
+            <p>Selamat datang di panel admin. Anda dapat mengelola konten website dari sini.</p>
+            <button class="btn">Tambah Acara Budaya</button>
+            <button class="btn">Kelola Galeri</button>
         </div>
     </section>
 
@@ -185,7 +261,8 @@
         </div>
     </footer>
 
+</body>
+
     <!-- JavaScript -->
     <script src="script.js"></script>
-</body>
 </html>
